@@ -1,0 +1,46 @@
+code . = command to open vscode in terminal 
+
+index.js -starting point 
+
+app is the first component 
+child of app 
+
+render -keyword
+
+can create component in two ways 
+1) Function = a functional component is simple to write , to return JSX
+2)class = a class component is a little longer to write, provide a more fixed structure for some advance features(necessary)
+
+Create folder"Components" best practice
+-Greetings component .jsx
+
+const Greetings = () => (
+	<p> Hello </p>
+)
+
+export default Greetings
+
+-import {Greetings} from ... or just Greetings
+
+Making things dynamic
+-Props (properties)
+props = {sudent : "wako"}
+
+Class components
+
+import {Component} from "react"
+
+class ClassGreetings extends Component{
+	render(){
+	return (<p classname={...} >Hello {...}</p>)
+}
+
+}
+
+export default ClassGreetings
+
+Classes do more than functions
+-can hold a state object(a function cannot)
+- in the state object you want to store properties you want to keep track of
+setState()
+
